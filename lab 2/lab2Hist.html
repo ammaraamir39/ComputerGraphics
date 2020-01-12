@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Histogram</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    /* Create three equal columns that floats next to each other */
+    .column {
+        float: left;
+        width: 33.33%;
+        padding: 10px;
+        height: 400px;
+        /* Should be removed. Only for demonstration */
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+</style>
+<body>
+    <input type="file" id="imageFile" accept=".png, .jpg, .jpeg"></input>
+    <canvas id="canvas" width="400" height="300" style="border:1px solid black">
+    
+
+    </canvas>
+    <canvas id="canvasred" width="400" height="300" style="border:1px solid black;float: right;margin-top: 308px;margin-right: 105px">
+    
+    
+    </canvas>
+    <canvas id="canvasgreen" width="400" height="300" style="border:1px solid black">
+    
+    
+    </canvas>
+    <canvas id="canvasblue" width="400" height="300" style="border:1px solid black">
+    
+    
+    </canvas>
+    
+    <script src="histogram.js"></script>
+</body>
+</html>
